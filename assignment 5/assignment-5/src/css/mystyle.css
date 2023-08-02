@@ -1,0 +1,154 @@
+/* Set a background image for the body */
+body {
+  background-color: #f1e2ff;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("https://fonts.google.com/specimen/Poppins?query=poppins");
+}
+
+@import url("D:\OneDrive - Seneca\Semester 02\WEB222\assignment 5\assignment-5\src\Beatlight.otf");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding: 15px 0;
+}
+
+h1 {
+  color: #6d4bb7;
+  font-family: "Beatlight", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* CSS for the navigation bar */
+nav {
+  background-color: #6d4bb7;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 8px 20px -10px rgba(0, 0, 0, 0.3);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+/* CSS for the artist buttons */
+button {
+  padding: 5px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #6d4bb7;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #982c61;
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Remove the default button focus outline */
+button:focus {
+  outline: none;
+}
+
+/* Add some space between the buttons for better visual separation */
+button + button {
+  margin-left: 15px;
+}
+
+/* Ensure buttons fit nicely in the container even on small screens */
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.music-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 20px; /* Add padding for better visual separation */
+}
+
+/* Style for the card container */
+.card {
+  width: 250px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+/* Style for the card image */
+.card img {
+  border: 1px solid #000;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the article content */
+.card article {
+  padding: 10px;
+}
+
+/* Style for the article header */
+.card article header h2 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Style for the content tags */
+.card .content .tag {
+  font-size: 14px;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #060606;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style for the year and duration */
+.card .content .year,
+.card .content .duration {
+  font-size: 14px;
+  display: block;
+  margin-top: 2px;
+  color: #fff;
+}
