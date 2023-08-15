@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cox's Bazar- Bangladesh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/mystyle.css" />
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="Media/logo.png" alt="Logo" />
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="info.html">Explore</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="https://calendly.com/tanimuldihan/15min">Plan A Trip!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="info-heading">
+      <img src="Media/reviews.jpg" alt="Beach Image" />
+      <div class="heading">
+        <h1>What People have experienced!</h1>
+      </div>
+    </section>
+
+    <main>
+      <div class="review-cards" id="reviewCards">
+        <!-- Dynamically create  song cards here -->
+      </div>
+    </main>
+
+    <section class="createform">
+      <h1>Give Your Review</h1>
+      <div class="newReview">
+        <img class="ReviewIllustration" src="Media/Online Review-cuate.png" alt="online review" />
+        <form id="newReviewForm" action="/newreview" method="post">
+          <label for="name">Name:</label>
+          <input
+            class="input"
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            autofocus
+            tabindex="1"
+            required
+          />
+
+          <label for="occupation">Occupation:</label>
+          <input
+            class="input"
+            type="text"
+            id="occupation"
+            name="occupation"
+            autocomplete="occupation"
+            tabindex="2"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" autocomplete="email" tabindex="3" required />
+
+          <label for="datetime">Date & Time:</label>
+          <input
+            class="input"
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            autocomplete="off"
+            tabindex="4"
+            required
+          />
+
+          <label for="image">Image:</label>
+          <input type="file" id="image" accept="image/*" name="image" tabindex="5" required />
+
+          <label for="rating">Rating:</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" tabindex="6" required />
+
+          <label for="review">Review:</label>
+          <textarea
+            id="review"
+            name="review"
+            rows="4"
+            placeholder="Write Your Review"
+            tabindex="7"
+            required
+          ></textarea>
+
+          <input class="input" id="create-button" type="create" value="Create" tabindex="8" />
+        </form>
+      </div>
+    </section>
+    <!-- JavaScript Data Files -->
+    <script src="./js/data.js"></script>
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+
+  <footer>
+    <div class="newsletter">
+      <h2>
+        <span>Want to get update every month!</span>
+        <span>Subscribe Our Newsletter!</span>
+      </h2>
+      <form id="newsletterForm" action="https://httpbin.org/post" method="post">
+        <input
+          type="emailaddress"
+          id="emailaddress"
+          name="email"
+          placeholder="Enter Your Email Address"
+          required
+        />
+        <input type="hidden" id="hiddenName" name="hiddenName" value="Your Name" />
+        <button type="submit" id="joinButton" disabled>Join</button>
+      </form>
+    </div>
+
+    <div class="nav-list">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Plan A Trip</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</html>

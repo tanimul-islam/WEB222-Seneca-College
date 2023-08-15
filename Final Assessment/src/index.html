@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cox's Bazar- Bangladesh</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/mystyle.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="Media/logo.png" alt="Logo" />
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="info.html">Explore</a>
+          </li>
+          <li>
+            <a href="reviews.html">Reviews</a>
+          </li>
+          <li>
+            <a href="https://calendly.com/tanimuldihan/15min">Plan A Trip!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <video class="video-slide" src="Media/landing page.m4v" autoplay muted loop></video>
+      <div class="content">
+        <h1>COX’S BAZAR</h1>
+        <h3>World’s Largest Beach</h3>
+        <p>
+          Welcome to Cox's Bazar, a coastal paradise that stretches its arms along the Bay of
+          Bengal, offering the enchanting embrace of the world's longest natural sea beach. Nestled
+          in the southeastern corner of Bangladesh, Cox's Bazar captivates travelers with its
+          pristine sandy shores, turquoise waters, and a captivating fusion of cultural heritage and
+          tranquil serenity. With each gentle wave, this charming destination invites you to immerse
+          yourself in the rhythm of the ocean, to explore hidden treasures in lush hills and vibrant
+          markets, and to discover a place where time slows down, and worries fade away. Cox's Bazar
+          beckons you to experience an unforgettable journey of sun-kissed horizons, warm
+          hospitality, and a unique coastal tapestry that weaves tales of wonder and delight.
+        </p>
+        <a href="#">Explore More</a>
+      </div>
+    </section>
+
+    <section class="KnowMore">
+      <h1>Let's Have a Virtual Tour</h1>
+      <div class="ytvideos">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/gYlxw1mbOrE"
+          title="World&#39;s Longest Sea Beach - Cox&#39;s Bazar, Aerial View"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/ERQRtdJU6Ds"
+          title="ST martin and COX Bazar Aerial View ( DJI Mini 2)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <h1>Cox's Bazar Unwrapped<span>Vlogger's Odyssey</span></h1>
+      <div class="vlogs">
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/khlekuzdFmk"
+          title="The World&#39;s LONGEST Beach (extreme!) 🇧🇩"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="1280"
+          height="720"
+          src="https://www.youtube.com/embed/pFAgtwVMcdc"
+          title="🇧🇩 My First Cox&#39;s Bazar, Bangladesh!! | The Longest beach in the World"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <footer>
+      <div class="newsletter">
+        <h2>
+          <span>Want to get update every month!</span>
+          <span>Subscribe Our Newsletter!</span>
+        </h2>
+        <form id="newsletterForm" action="https://httpbin.org/post" method="post">
+          <input
+            type="emailaddress"
+            id="emailaddress"
+            name="email"
+            placeholder="Enter Your Email Address"
+            required
+          />
+          <input type="hidden" id="hiddenName" name="hiddenName" value="Your Name" />
+          <button type="submit" id="joinButton" disabled>Join</button>
+        </form>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Plan A Trip</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
